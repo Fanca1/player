@@ -10,7 +10,7 @@ moment.locale('pt-BR');
 const token = process.env.token;
 
 client.on('guildMemberAdd', member => {
-    client.guilds.get(member.guild.id).channels.get("418834373610307586").send(`Olá ${member}, Obrigado por entrar no Player South - Brasil Leia as regras e tenha uma boa estadia. `, {file: {name: 'welcome.gif'}});
+    client.guilds.get(member.guild.id).channels.get("418834373610307586").send(`Olá ${member}, Obrigado por entrar no Player South - Brasil Leia as regras e tenha uma boa estadia. `, {file: {attachment: "", name: 'welcome.gif'}});
    })
 
 client.on("ready", () => {
