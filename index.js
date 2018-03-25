@@ -44,17 +44,5 @@ client.on("ready", () => {
     
 });
 
-@client.event
-async def on_member_join(member):
-  canal = client.get_channel("418834373610307586")
-  regras = client.get_channel("418065547419320322")
-  msg = "Bem Vindo {}\n Leia as {}".format(member.mention, regras.mention)
-  await client.send_message(canal, msg) 
-
-@client.event
-async def on_member_remove(member):
-   canal = client.get_channel("423328604911304708")
-   msg = "Adeus Velho amigo :\ foi Bom ter você como membro, volte sempre. {}".format(member.mention)
-   await client.send_message(member, msg) 
    
 client.login(token)
