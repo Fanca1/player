@@ -36,7 +36,7 @@ client.on("ready", () => {
     setTimeout(function() {
         console.log(`                   ---== PLAYER SOUTH ==---                 \n\nMembros: (${client.users.size}):\n\n${membrosNomes}`);
     }, 2000)
-    client.user.setGame("Com " + client.users.size + " Membros");
+    client.user.setGame(" Com " + client.users.size + " Membros");
     client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     setInterval(() => {
         client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
