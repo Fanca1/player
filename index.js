@@ -31,7 +31,7 @@ client.on("ready", () => {
 
     const membrosNomes = string
     var statusIDO = ["idle", "dnd", "online", ]
-    var jogando = [`Digite -ajuda para ver meus comandos.`, `Divulgue nosso servidor, use: -convite`, `Divulgue nosso servidor e ganhe cargos especiais! ❣️ `, `Visite o canal do Dono do servidor no youtube, digite: -youtube`, `Entre no servidor do nosso Parceiro, use: -athenos`, `Estamos com vagas na staff, para mais informações chame o dono do servidor no privado. `, "Para receber cargos de jogos, utilize a sala registro."] 
+    var jogando = [`Digite -ajuda para ver meus comandos.`, `Divulgue nosso servidor, use: -convite`, `Divulgue nosso servidor e ganhe cargos especiais! ❣️ `, `Visite nosso canal no Youtube, digite: -youtube`, `Entre no servidor do nosso Parceiro, use: -athenos`, `Estamos com vagas na staff, para mais informações chame o dono do servidor no privado. `, "Para receber cargos de jogos, utilize a sala registro."] 
 
     console.log(`Conectado !`)
     setTimeout(function() {
