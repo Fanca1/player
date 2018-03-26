@@ -11,7 +11,7 @@ const prefix = "-"
 const token = process.env.token;
 
 client.on('guildMemberAdd', member => {
-    client.guilds.get(member.guild.id).channels.get("418834373610307586").send(`Olá ${member}, Obrigado por entrar no Player South - Brasil Leia as regras e tenha uma boa estadia. `);
+    client.guilds.get(member.guild.id).channels.get("418834373610307586").send(`Olá ${member}, Obrigado por entrar no **Player South - Brasil** Leia as regras e tenha uma boa estadia. `);
    })
 
 client.on("ready", () => {
@@ -31,7 +31,7 @@ client.on("ready", () => {
 
     const membrosNomes = string
     var statusIDO = ["idle", "dnd", "online", ]
-    var jogando = [`Digite -ajuda para ver meus comandos.`, `Divulgue nosso servidor, use: -convite`, `Divulgue nosso servidor e Ganhe Prêmios`, `Visite nosso canal no Youtube: -youtube`, "Entre no servidor do nosso Parceiro, use: -athenos"]
+    var jogando = [`Digite -ajuda para ver meus comandos.`, `Divulgue nosso servidor, use: -convite`, `Divulgue nosso servidor e Ganhe Prêmios`, `Visite nosso canal no Youtube, Digite: -youtube`, "Entre no servidor do nosso Parceiro, use: -athenos"]
 
     console.log(`Conectado !`)
     setTimeout(function() {
