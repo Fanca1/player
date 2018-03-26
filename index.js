@@ -31,7 +31,7 @@ client.on("ready", () => {
 
     const membrosNomes = string
     var statusIDO = ["idle", "dnd", "online", ]
-    var jogando = [`Digite -ajuda para ver meus comandos.`, `Divulgue nosso servidor, use: -convite`, `Divulgue nosso servidor e Ganhe Prêmios`, `Visite nosso canal no Youtube: https://www.youtube.com/channel/UCOcubNzQHrxIws_VSbV0bZQ`, "Entre no servidor do nosso Parceiro, use: -athenos"]
+    var jogando = [`Digite -ajuda para ver meus comandos.`, `Divulgue nosso servidor, use: -convite`, `Divulgue nosso servidor e Ganhe Prêmios`, `Visite nosso canal no Youtube: -youtube`, "Entre no servidor do nosso Parceiro, use: -athenos"]
 
     console.log(`Conectado !`)
     setTimeout(function() {
@@ -57,6 +57,18 @@ client.on("message", (message) => {
 
     if(message.content.startsWith(prefix + "convite")){
         message.reply("**Convide seus amigos para o servidor: https://discord.gg/swacvgR**");
+    }
+
+    if(message.content.startsWith(prefix + "ajuda")){
+        message.channel.sendMessage({
+            "embed": {
+              "description": "ㅤㅤㅤㅤㅤㅤㅤ**:fire: AJUDA :fire:**ㅤㅤㅤㅤㅤㅤㅤ\nㅤ\n**Comandos:**\n-ajuda\n-musicas\n-youtube\n-convite\n-avatar\n-athenos",
+              "color": 16711680,
+              "thumbnail": {
+                "url": "https://i.imgur.com/AjAfhx7.png"
+              }
+            }
+          });
     }
 
     if(message.content.startsWith(prefix + "athenos")){
@@ -116,5 +128,3 @@ client.on("message", (message) => {
     }
 
 })
-
-  
