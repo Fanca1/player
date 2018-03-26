@@ -31,7 +31,7 @@ client.on("ready", () => {
 
     const membrosNomes = string
     var statusIDO = ["idle", "dnd", "online", ]
-    var jogando = [`Digite -ajuda para ver meus comandos.`, `Divulgue nosso servidor, use: -convite`, `Divulgue nosso servidor e Ganhe Prêmios`, `Visite nosso canal no Youtube, Digite: -youtube`, "Entre no servidor do nosso Parceiro, use: -athenos"]
+    var jogando = [`Digite -ajuda para ver meus comandos.`, `Divulgue nosso servidor, use: -convite`, `Divulgue nosso servidor e Ganhe Cargos especiais. :heart: `, `Visite o canal do Dono do servidor no Youtube, Digite: -youtube`, `Entre no servidor do nosso Parceiro, use: -athenos`, `Estamos com vagas na Staff, para mais informações chame o Dono do servidor no privado. `, "Para receber cargos de jogos, utilize a Sala Registro"] 
 
     console.log(`Conectado !`)
     setTimeout(function() {
@@ -43,7 +43,7 @@ client.on("ready", () => {
         client.user.setGame(jogando[Math.round(Math.random() * jogando.length - 1)], "https://www.twitch.tv/zmarciogod");
         client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     }, 1 * 60 * 1000)
-    client.guilds.get("418065547419320320").channels.get("418840018593775617").sendMessage("**:warning: Reiniciado automaticamente.**");
+    client.guilds.get("418065547419320320").channels.get("418840018593775617").sendMessage("**:warning: Reniciado Automaticamente.**");
     
 });
 
@@ -101,7 +101,7 @@ client.on("message", (message) => {
     if(message.content.startsWith(prefix + "musicas")){
         message.channel.sendMessage({
             "embed": {
-              "description": "ㅤㅤㅤㅤㅤㅤㅤ**:fire: Comandos de Músicas :fire:**ㅤㅤㅤㅤㅤㅤㅤ\nㅤ\n**Comandos dos bots:**",
+              "description": "ㅤㅤㅤㅤㅤㅤㅤ**:fire: Comandos de Músicas :fire:**ㅤㅤㅤㅤㅤㅤㅤ\nㅤ\n**Todos oc Comandos:**",
               "color": 16711680,
               "thumbnail": {
                 "url": "https://i.imgur.com/AjAfhx7.png"
