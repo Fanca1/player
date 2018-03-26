@@ -40,7 +40,7 @@ client.on("ready", () => {
     client.user.setGame(jogando[Math.round(Math.random() * jogando.length - 1)], "https://www.twitch.tv/zmarciogod");
     client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     setInterval(() => {
-        client.user.setGame("pika em " + client.users.size + " Membros", "https://www.twitch.tv/zmarciogod");
+        client.user.setGame("Player South - " + client.users.size + "Membros", "https://www.twitch.tv/zmarciogod");
         client.user.setStatus(statusIDO[Math.round(Math.random() * statusIDO.length - 1)]);
     }, 1 * 60 * 1000)
     client.guilds.get("418065547419320320").channels.get("418840018593775617").sendMessage("**:warning: Reiniciado automaticamente.**");
