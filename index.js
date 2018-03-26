@@ -101,7 +101,7 @@ client.on("message", (message) => {
     if(message.content.startsWith(prefix + "musicas")){
         message.channel.sendMessage({
             "embed": {
-              "description": "ㅤㅤㅤㅤㅤㅤㅤ**:fire: Comandos de Músicas :fire:**ㅤㅤㅤㅤㅤㅤㅤ\nㅤ\n**Todos oc Comandos:**",
+              "description": "ㅤㅤㅤㅤㅤㅤㅤ**:fire: Comandos de Músicas :fire:**ㅤㅤㅤㅤㅤㅤㅤ\nㅤ\n**Todos os Comandos:**",
               "color": 16711680,
               "thumbnail": {
                 "url": "https://i.imgur.com/AjAfhx7.png"
