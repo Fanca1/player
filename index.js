@@ -50,6 +50,15 @@ client.on("ready", () => {
 client.login(token)
 
 client.on("message", (message) => {
+	if(message.guild.id != "418065547419320320") return
+	if(message.channel.id != "423881014331310100") return
+	message.react('👍').then(function(teste){
+
+message.react('👎')
+})
+});
+
+client.on("message", (message) => {
 
     if(message.content.startsWith(prefix + "youtube")){
         message.reply("**Visite o canal do dono no youtube.\nhttps://www.youtube.com/channel/UCOcubNzQHrxIws_VSbV0bZQ :smile:**");
