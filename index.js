@@ -93,7 +93,7 @@ client.on("message", (message) => {
     }
 
     if(message.content.startsWith("")){
-      if (message.channel.id == client.guilds.get("418065547419320320").channels.get("423881014331310100").id) {
+      if (message.channel.id == client.guilds.get("423881014331310100").channels.get("423881014331310100").id) {
       setTimeout(function() {
         message.react("👍");
     }, 500)
