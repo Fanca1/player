@@ -133,7 +133,7 @@ client.on("message", (message) => {
                 }
               ]
             } 
-	   exports.run (cliente,message.args)=>{
+	   exports.run (cliente,message,args)=>{
       var razão = args.slice(1).join(" ")
 	  
 	  var usuario = message.mention.users.first();
