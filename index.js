@@ -129,13 +129,11 @@ client.on("message", (message) => {
                 {
                   "name": ":fire: Loritta:",
                   "value": "**-** +tocar\n**-** +pular\n**-** +pausar\n**-** +np",
-                  "inline": true
-                 }
-              }
-            })
-          }
-		    
-        exports.run (cliente,message,args) =>{
+                "inline": true
+			
+	      }
+		      
+         exports.run (cliente,message,args) =>{
            var razão = args.slice(1).join(" ")
 	  
 	   var usuario = message.mention.users.first();
